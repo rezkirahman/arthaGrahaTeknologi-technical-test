@@ -6,7 +6,7 @@ import (
 )
 
 func checkPalindrome(str string) bool {
-	runes := []rune(strings.ToLower(str)
+	runes := []rune(strings.ToLower(str))
 	start, end := 0, len(runes)-1
 
 	for start < end {
