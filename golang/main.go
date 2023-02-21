@@ -6,14 +6,10 @@ import (
 )
 
 func checkPalindrome(str string) bool {
-	// konversi string ke slice of runes untuk memudahkan pengolahan
-	runes := []rune(strings.ToLower(str))
-	// inisialisasi pointer untuk mengakses karakter pertama dan terakhir
+	runes := []rune(strings.ToLower(str)
 	start, end := 0, len(runes)-1
 
-	// lakukan iterasi sampai pointer start dan end bertemu
 	for start < end {
-		// jika karakter di posisi start dan end tidak sama, string bukan palindrome
 		if runes[start] != runes[end] {
 			return false
 		}
@@ -21,7 +17,6 @@ func checkPalindrome(str string) bool {
 		end--
 	}
 
-	// string adalah palindrome jika sampai di sini tidak ada karakter yang tidak sama
 	return true
 }
 
